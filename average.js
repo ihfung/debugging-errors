@@ -1,5 +1,4 @@
-const average = function(list) {
-  //Using expression function instead of declaration function
+function average(list) {
   let sum = 0; //Using var cause an error because we changing the value of sum
 
   for (let num of list) {
@@ -9,5 +8,5 @@ const average = function(list) {
   }
 
   return sum / list.length;
-}; //Missing closing bracket for the function call average
+} //Missing closing bracket for the function call average
 console.log(average([3, 5, 7]));
